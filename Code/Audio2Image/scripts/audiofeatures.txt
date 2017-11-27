@@ -1,0 +1,6 @@
+PlayingCello/v_PlayingCello_g01_c01.avi.wav_7.t7
+PlayingCelloTest/v_PlayingCello_g01_c01.avi.wav_5.t7
+PlayingDhol/v_PlayingDhol_g01_c01.avi.wav_7.t7
+PlayingDholTest/v_PlayingDhol_g01_c01.avi.wav_5.t7
+PlayingSitar/v_PlayingSitar_g02_c01.avi.wav_7.t7
+PlayingSitarTest/v_PlayingSitar_g01_c01.avi.wav_5.t7

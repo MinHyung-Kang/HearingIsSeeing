@@ -1,0 +1,6 @@
+All code here, unless otherwise mentioned, is from the SoundNet code posted here: https://github.com/cvondrick/soundnet
+
+Vondrick, C., Aytar, Y., and Torralba, A. (2016). SoundNet: Learning Sound Representations from
+Unlabeled Video. Advances in Neural Information Processing Systems 29.
+
+extract_feat_t7.lua is a modified version we wrote of extract_feat.lua that performs vector normalization and saves information in a modified format so as to be better used for the rest of the code. The calculation of how to normalize vectors was done in advance in matlab. It is also run on a finetuned version of the SoundNet CNN, rather than the original pre-trained model.

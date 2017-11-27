@@ -1,0 +1,53 @@
+Main Code
+
+Code adapted from : https://github.com/reedscot/icml2016
+
+Reed, S., Akata, Z., Yan, X., Logeswaran, L., Schiele, B., and Lee, H. (2016). Generative adversarial text
+to image synthesis. Proceedings of The 33rd International Conference on Machine Learning.
+
+
+=====================================================
+How to run
+=====================================================
+
+To train  :
+1. Edit the CONFIG file as necessary to indicate the directory of the data file
+2. Edit scripts/train_instruments.sh accordingly if necessary
+
+Then run by :  [ scripts/train_instruments.sh]
+
+To generate : 
+1. Edit scripts/audiofeatures.txt to select which audio inputs to use.
+2. Edit scripts/demo_instruments.sh to select which model to use to generate.
+3. Edit aud2img_demo_simp.lua if necessary.
+
+Then run by : [ scripts/demo_instruments.sh]
+
+=====================================================
+Models
+=====================================================
+For training, there are various options.
+Depending on which structure one wants to use, change the called file in scripts/train_instruments.sh
+
+1. a2i_main_cls_int.lua : Original text to image structure.
+2. a2i_main_wasgna.lua : Original text to image network structure with wasgan objective function. 
+3. a2i_main_wasgan_simple.lua : Simplified network structure with wasgan objective function. Allows initialization with pretrained wasgan model. 
+
+=====================================================
+Notes
+=====================================================
+Apart from parameters, the important paramters to change within models include :
+
+'img_dir', 'data_root', 'classnames', 'trainids','checkpoint_dir'
+
+These are currently set up in relative path respect to the model files.
+They might need to be changed to absolute paths for the code to run.
+
+=====================================================
+Modifications
+=====================================================
+Main modifications include
+- Incorporating Wasserstein objective function and allowing initialization with pretrained wasserstein GAN
+- Saving the statistics of training
+
+Other minor modifications were made as well. 

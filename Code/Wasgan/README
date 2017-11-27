@@ -1,0 +1,18 @@
+Wasserstein GAN
+
+Original Code is from : https://github.com/fonfonx/WassersteinGAN.torch
+
+
+To train, one needs to specify options in main.lua
+
+Ones that require special attention includes : 
+
+- 'dataset' : folder of the data. Should include a subdirectory which includes the data
+- 'name' : name of the produced network
+- 'init_d','init_g' : if initializing the network with another form.
+
+To run the code : 
+	[ th main.lua ]
+
+To generate results :
+	[ net=<path_to_generator_network> name=<name_to_save_images> th generate.lua ]

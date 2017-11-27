@@ -1,0 +1,7 @@
+# instrument related data
+INST_IMG_DIR=/../../Data/ucf3_subset
+INST_META_DIR=/../../Data/
+
+# location to save checkpoints
+CHECKPOINT_DIR=/checkpoints
+
